@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div>
+    <form action="/app/action.php" method="post">
+        <fieldset>
+            <legend>DATABASE</legend>
+            <input type="submit" name="first" value="A">
+            <input type="submit" name="second" value="ABC">
+            <input type="submit" name="third" value="CB">
+            <input type="submit" name="fourth" value="B-ASC">
+            <input type="submit" name="fifth" value="B-DESC">
+            <input type="text" id="db_a" name="db_a" placeholder="INSERT VALUE TO TABLE A"><br>
+            <input type="number" id="db_b" name="db_b" placeholder="INSERT NUMBERIC VALUE TO TABLE B"><br>
+            <input type="text" id="db_c" name="db_c" placeholder="INSERT VALUE TO TABLE C"><br>
+        </fieldset>
+    </form>
+</div>
+<?php include('app/listing.php'); ?>
+<footer>
+    <p>Author: László Mészöly</p>
+    <p><a href="mailto:lm-available@outlook.com">lm-available@outlook.com</a></p>
+</footer>
+</body>
+</html>

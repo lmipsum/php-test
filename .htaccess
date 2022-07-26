@@ -1,0 +1,6 @@
+AddType application/x-httpd-php .html
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.+$ / [R=302,NC,L]
